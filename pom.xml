@@ -22,7 +22,7 @@
 				<checksumPolicy>ignore</checksumPolicy>
 			</releases>
 			<snapshots>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</snapshots>
 			<url>file://${project.basedir}/repo</url>
 		</repository>
@@ -74,6 +74,15 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
 			<!-- **** A plugin that copmpiles XSDs to XMLbeans **** -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
