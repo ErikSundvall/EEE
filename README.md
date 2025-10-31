@@ -1,5 +1,15 @@
 # LiU EEE
 
+## ⚠️ Modernization Status (October 2025)
+
+**This project does not currently compile due to unavailable dependencies.**
+
+- 📄 **[STATUS.md](STATUS.md)** - Quick overview of compilation issues
+- 📋 **[BUILD_INSTRUCTIONS.md](BUILD_INSTRUCTIONS.md)** - Step-by-step build guide
+- 📊 **[MODERNIZATION.md](MODERNIZATION.md)** - Detailed analysis and recommendations
+
+---
+
 A REST based Educational Electroinc Health Record (EHR) Environment based on openEHR.
 This repository hosts the LiU EEE source code for the Linköping University Educational EHR Environment. (The openEHR website is at http://www.openehr.org)
 
