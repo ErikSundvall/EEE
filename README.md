@@ -7,6 +7,7 @@
 - 📄 **[STATUS.md](STATUS.md)** - Quick overview of compilation issues
 - 📋 **[BUILD_INSTRUCTIONS.md](BUILD_INSTRUCTIONS.md)** - Step-by-step build guide
 - 📊 **[MODERNIZATION.md](MODERNIZATION.md)** - Detailed analysis and recommendations
+- 🎯 **[PRD: Complete Modernization Plan](tasks/0001-prd-liu-eee-modernization.md)** - Product Requirements Document for migrating to Quarkus and Archie
 
 ---
 
