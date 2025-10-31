@@ -29,40 +29,7 @@
 		<repository>
 			<id>maven</id>
 			<name>Public Maven repository</name>
-			<url>http://uk.maven.org/maven2</url>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>maven-restlet</id>
-			<name>Public online Restlet repository</name>
-			<url>http://maven.restlet.org</url>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>xqj</id>
-			<name>XQJ Maven Repository</name>
-			<url>http://xqj.net/maven</url>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>basex</id>
-			<name>BaseX Maven Repository</name>
-			<url>http://files.basex.org/maven</url>
+			<url>https://repo.maven.apache.org/maven2</url>
 			<releases>
 				<updatePolicy>never</updatePolicy>
 			</releases>
@@ -79,8 +46,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<!-- **** A plugin that copmpiles XSDs to XMLbeans **** -->
@@ -122,8 +89,8 @@
 
 	<dependencies>
 
-		<!-- ******* RESTLET DEPENDENCIES ******* -->
-
+		<!-- ******* RESTLET DEPENDENCIES - COMMENTED OUT: Repository unavailable ******* -->
+		<!-- 
 		<dependency>
 			<groupId>org.restlet.jse</groupId>
 			<artifactId>org.restlet</artifactId>
@@ -153,6 +120,7 @@
 			<artifactId>org.restlet.ext.freemarker</artifactId>
 			<version>2.1.2</version>
 		</dependency>
+		-->
 
 
 		<!-- ******* OTHER DEPENDENCIES ******* -->
@@ -239,8 +207,10 @@
 			</dependency> -->
 
 
-		<!-- ******* OPENEHR DEPENDENCIES ******* -->
-
+		<!-- ******* OPENEHR DEPENDENCIES - COMMENTED OUT: Not in Maven Central with this groupId ******* -->
+		<!-- To build these dependencies, clone https://github.com/openEHR/java-libs and run mvn install -->
+		<!-- Then update the groupId below from "openehr" to "org.openehr.java-libs" -->
+		<!--
 		<dependency>
 			<groupId>openehr</groupId>
 			<artifactId>openehr-rm-core</artifactId>
@@ -276,15 +246,17 @@
 			<artifactId>rm-skeleton</artifactId>
 			<version>1.0.3-SNAPSHOT</version>
 		</dependency>
-		<dependency> <!-- This one was missing in the current 1.0.3 release -->
+		<dependency>
 			<groupId>openehr</groupId>
 			<artifactId>rm-validator</artifactId>
 			<version>1.0.2-SNAPSHOT</version>
 		</dependency>
+		-->
 
 
-		<!-- ******* BASEX DEPENDENCIES ******* -->
-
+		<!-- ******* BASEX DEPENDENCIES - COMMENTED OUT: Versions not available ******* -->
+		<!-- Consider updating to current BaseX versions available in Maven Central (e.g., 10.7) -->
+		<!--
 		<dependency>
 			<groupId>org.basex</groupId>
 			<artifactId>basex</artifactId>
@@ -307,9 +279,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.basex</groupId>
-			<artifactId>basex-api</artifactId> <!-- TODO: Possibly unneeded -->
+			<artifactId>basex-api</artifactId>
 			<version>7.6</version>
 		</dependency>
+		-->
 
 		<dependency>
 			<groupId>org.apache.xmlrpc</groupId>
