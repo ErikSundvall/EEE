@@ -1,13 +1,35 @@
 # LiU EEE
 
-## ⚠️ Modernization Status (October 2025)
+## ⚠️ Modernization Status (November 2025)
 
-**This project does not currently compile due to unavailable dependencies.**
+**Phase 1 (Foundation & Build System) - IN PROGRESS**
 
+The project is undergoing modernization from Java 8 + Restlet to Java 17 + Quarkus. Phase 1 build system updates are complete:
+
+✅ **Completed:**
+- Java 17 build configuration
+- Quarkus 3.15.0 framework integration
+- Archie 3.15.0 openEHR library integration
+- BaseX 10.7 database library upgrade
+- Updated Maven plugins and dependencies
+- All dependencies now from Maven Central
+
+⚠️ **Known Compilation Errors (Expected):**
+The project currently does not compile - this is expected at the end of Phase 1. Compilation errors exist due to:
+- Restlet framework code (to be migrated in Phase 3)
+- Old openEHR library references (to be migrated in Phase 2)
+- XMLBeans schema compilation (temporarily disabled)
+
+**Next Steps:**
+- Phase 2: Migrate openEHR library references to Archie
+- Phase 3: Migrate Restlet REST endpoints to Quarkus JAX-RS
+
+**Documentation:**
 - 📄 **[STATUS.md](STATUS.md)** - Quick overview of compilation issues
 - 📋 **[BUILD_INSTRUCTIONS.md](BUILD_INSTRUCTIONS.md)** - Step-by-step build guide
 - 📊 **[MODERNIZATION.md](MODERNIZATION.md)** - Detailed analysis and recommendations
 - 🎯 **[PRD: Complete Modernization Plan](tasks/0001-prd-liu-eee-modernization.md)** - Product Requirements Document for migrating to Quarkus and Archie
+- 📝 **[Phase 1 Task List](tasks/0001-tasks-foundation-build-system.md)** - Foundation & Build System tasks
 
 ---
 
